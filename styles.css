@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(swing.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+.navbar {
+    width: 100%;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: rgb(5, 246, 226);
+    font-size: 50px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 720px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 27px;
+    margin: 100px;
+    font-size: 15px;
+}
+
+ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+ul li a:hover {
+    color: rgb(5, 246, 226);
+}
+
+.searchbar {
+    width: 600px;
+    float: right;
+    margin-left: 270px;
+}
+
+.srch {
+    font-weight: bold;
+    color: orange;
+    font-family: 'Times New Roman';
+    width: 400px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid orange;
+    margin-top: 20px;
+    float: left;
+    border-right: none;
+    font-size: 20px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    background: orange;
+    border: 2px solid orange;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.major {
+    width: 100%;
+}
+
+#one {
+    width: 30%;
+    color: rgb(41, 160, 203);
+    padding-left: 10px;
+    padding-right: 2px;
+    background-color: rgb(32, 44, 40);
+}
+
+#two {
+    width: 68%;
+    color: rgb(41, 160, 203);
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgb(40, 61, 61);
+}
+
+.base {
+    float: left;
+    height: 85vh;
+}
+
+#partone {
+    text-align: center;
+}
+
+#display {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(tilt.jpg);
+    height: 30vh;
+}
+
+#name {
+    font-size: 40px;
+    font-family: Arial;
+}
+
+#bio {
+    font-size: 25px;
+    font-family: Arial;
+}
+
+#hobbies {
+    font-size: 20px;
+    font-family: Arial;
+    padding-top: 10px;
+}
+
+.dpi {
+    border-radius: 50%;
+}
+
+#post {
+    background-color: aquamarine;
+    font-size: 30px;
+    height: 15vh;
+    text-align: center;
+    padding: 30px;
+}
+
+.postchoices {
+    font-size: 15px;
+    background-color: honeydew;
+    width: 300px;
+    height: 40px;
+    border: 2px solid honeydew;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.poster {
+    padding-right: 5px;
+    float: left;
+    position: relative;
+}
+
+#pos {
+    width: 100%;
+    height: 64vh;
+}

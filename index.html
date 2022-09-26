@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="indexstyles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendly</title>
+</head>
+
+<body>
+    <div class="major">
+        <div class="logo">
+            <h1>Friendly</h1>
+            <p><em>it doesn't get more <strong>Friendly</strong> than this</em></p>
+        </div>
+        <div>
+            <button class="butons" id="logon">login</button>
+            <button class="butons" id="signup">signup</button>
+        </div>
+    </div>
+
+
+    <div id="lagin">
+        <form id="loginform" action="#" onsubmit="login(event);" autocomplete="off">
+            <table>
+                <thead>
+                    <tr>
+                        <td id="login">Login Here</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter your Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" placeholder="Enter your Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>
+                                    login
+                                </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Do you have an account ?</td>
+                    </tr>
+                    <tr>
+                        <td><a id="altSignup" href="">sign up</a> here</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </div>
+
+    <div id="signups">
+        <form id="signupform" onsubmit="signUp(event);" autocomplete="off" action="#">
+
+            <p class="sign">Sign Up</p>
+
+            <div class="textboxes">
+                <label for="fname">First Name</label><br>
+                <input class="inputs" name="fname" id="fname" type="text" required><br><br>
+                <label for="lname">Last Name</label><br>
+                <input class="inputs" name="lname" id="lname" type="text" required><br><br>
+                <label for="email">Email</label><br>
+                <input class="inputs" name="email" id="email" type="text" required><br><br>
+                <label for="pass">Password</label><br>
+                <input class="inputs" name="pass" id="pwd" type="password" required><br><br>
+                <label for="passCon">Confirm Password</label><br>
+                <input class="inputs" name="passCon" type="password" required><br><br>
+                <label for="age">age</label><br>
+                <input class="inputs" name="age" id="age" type="text" required><br><br>
+            </div>
+            <div>
+                <p>Gender</p>
+                <input type="radio" name="gender" id="male">
+                <label for="male">male</label><br><br>
+                <input type="radio" name="gender" id="female">
+                <label for="female">female</label><br><br>
+                <input type="radio" name="gender" id="pntm">
+                <label for="pntm">prefer not to mention</label><br><br><br><br><br>
+
+            </div>
+
+            <input type="checkbox" name="check" id="terms">
+            <label for="terms">Do you agree to the <a href="#">terms and conditions</a></label><br><br>
+
+            <input type="submit" name="sub" id="sub">
+
+        </form>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+    <script src="copied.js"></script>
+</body>
+
+</html>

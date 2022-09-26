@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="syle.css"-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Profile</title>
+    <style>
+        input {
+            height: 40px;
+            margin: 5px;
+            font-size: 15px;
+            width: 400px;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+        
+        button {
+            height: 25px;
+            margin: 5pt;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Friendly</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="editprofile.html" target="_blank">profile</a></li>
+                    <li><a href="">settings</a></li>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <input class="srch" type="search" name="" placeholder="search">
+                <a href=""><button class="btn">search</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <form name="profileform" onsubmit="updateProfile(event);" autocomplete="off" action="#">
+        <img id="profile" src="avatar.png" alt="profile" style="width: 100px; height:100px;"><br>
+        <h3>Change profile picture</h3><br>
+        <input type="file" name="pp" id="pp" accept="image/*" onchange=previewImage()><br>
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" id="username" required><br>
+        <label for="statement">Personal Statement:</label><br>
+        <input type="text" name="statement" id="statement"><br>
+        <label for="primo">Primary Education</label><br>
+        <input type="text" name="primo" id="primos"><br>
+        <label for="sec">Secondary Education</label><br>
+        <input type="text" name="sec" id="seco"><br>
+        <label for="muk">Campus</label><br>
+        <input type="text" name="muk" id="muk"><br>
+        <label for="hob">Hobbies</label><br>
+        <input type="text" name="hob" id="hob1"><br><br>
+        <input type="text" name="hob" id="hob2"><br><br>
+        <input type="text" name="hob" id="hob3"><br><br>
+        <input type="text" name="hob" id="hob4"><br><br>
+        <input type="text" name="hob" id="hob5"><br><br>
+        <p>Anything else you want people to know about you</p>
+        <textarea name="" id="aob" cols="80" rows="10">
+        </textarea><br>
+        <button>
+            save changes
+        </button>
+        <button>
+            <a href="friendly.html">back</a>
+        </button>
+    </form>
+
+
+    <!--script>
+        function previewImage() {
+            var profilepic = document.getElementById('profile');
+            var actualPic = document.getElementById('pp').files;
+            var reader = new FileReader();
+            if (actualPic.length > 0) {
+
+                reader.onload = function(e) {
+                    profilepic.setAttribute("src", e.target.result);
+                };
+
+
+            } else {
+                //var reader=new FileReader();
+                //reader.onload = function(e) {
+                profilepic.setAttribute("src", "avatar.png");
+                //}
+            }
+            reader.readAsDataURL(file[0]);
+        }
+    </script-->
+
+    <script src="profile.js"></script>
+</body>
+
+</html>

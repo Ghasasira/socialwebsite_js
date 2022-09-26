@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendly</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Friendly</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="editprofile.html" target="_blank">profile</a></li>
+                    <li><a href="">settings</a></li>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <input class="srch" type="search" name="" placeholder="search">
+                <a href=""><button class="btn">search</button></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="major">
+        <div id="one" class="base" onload=reload() onchange=reload()>
+            <div id="partone">
+                <div id="display">
+                    <div id="dp">
+                        <img class="dpi" style="width: 200px;" src="avatar.png" alt="dp">
+                    </div>
+                    <div id="name">
+                        <script>
+                            document.getElementById("name").innerHTML = "<p>" + JSON.parse(sessionStorage.getItem("currentUser")) + "</p>";
+                        </script>
+                    </div>
+                    <div id="bio"></div>
+
+                </div>
+                <div id="hobbies">
+
+                </div>
+                <div id="stuff">
+
+                </div>
+            </div>
+        </div>
+        <div id="two" class="base">
+            <div id="post">
+                <div>
+                    <p>Share an article, photo or idea</p>
+                </div>
+                <div id="postchoices">
+                    <button class="postchoices"> Write an article</button>
+                    <button class="postchoices">share image</button>
+
+                </div>
+            </div>
+            <div class="posts">
+
+            </div>
+            <div id="postcontent">
+                <img src="" alt="nothing yet woking " id="pos">
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script type="text/javascript">
+        let post = document.getElementById('pos');
+        let images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg'];
+        setInterval(function() {
+            let random = Math.floor(Math.random() * 20);
+            post.src = images[random];
+        }, 10000)
+    </script>
+    <script src="profile.js"></script>
+</body>
+
+</html>
