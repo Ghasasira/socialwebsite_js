@@ -5,6 +5,7 @@
             margin-top: 110px;
         }
         body{
+            color: #1a1423;
             background-repeat: no-repeat;
             background-image: linear-gradient(#ccc,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent);
         }
@@ -23,13 +24,15 @@
             border-radius: 10px;
             margin: 25px;
             font-size: 20px;
-            background-color: orangered;
+            border-style: solid;
+            border-color: #684756;
+            color: inherit;
         }
         
         #loginform {
             width: 300px;
             height: 340px;
-            background-color: aqua;
+            background-color: #c9c19f;
             position: fixed;
             top: 30%;
             left: 40%;
@@ -64,7 +67,7 @@
         #signupform {
             width: 500px;
             height: 800px;
-            background: rgb(64, 233, 230);
+            background: #c9c19f;
             position: fixed;
             top: 10%;
             left: 30%;
@@ -138,7 +141,7 @@
         }
 
         #frndly {
-            -webkit-text-stroke: 2px black;
+            -webkit-text-stroke: 2px #1a1423;
             color: transparent;
             background-image: linear-gradient(#ff4500,#ff4500);
             background-repeat: no-repeat;
