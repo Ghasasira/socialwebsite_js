@@ -3,7 +3,6 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             padding-top: 100px;
             margin-top: 220px;
-            color: orange;
         }
         
         .logo p {
@@ -134,3 +133,25 @@
         #overlay.active {
             opacity: 1;
         }
+
+        #frndly {
+            -webkit-text-stroke: 2px black;
+            color: transparent;
+            background-image: linear-gradient(#ff4500,#ff4500);
+            background-repeat: no-repeat;
+            background-position-x: -1000vw;
+            -webkit-background-clip: text;
+            animation: frndly 15s;
+            animation-delay: 3.5s;
+            animation-iteration-count: infinite;
+            ani
+        }
+        @keyframes frndly {
+            0%{
+                background-position-x: -1000vw;
+            }
+            100%{
+                background-position-x: 1000vw;
+            }
+        }
+        
