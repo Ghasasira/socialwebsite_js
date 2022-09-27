@@ -34,7 +34,7 @@ const updateProfile = e => {
     if (JSON.parse(sessionStorage.getItem("users")) != null) {
         var users = JSON.parse(sessionStorage.getItem("users"));
         users.push(user);
-        sessionStorage.setItem("users", JSON.stringify(users));
+        sessionStorage.seItem("users", JSON.stringify(users));
     } else {
         users = [];
         users.push(user);
@@ -48,12 +48,7 @@ const updateProfile = e => {
 
 
 
-// function reload() {
-//     let currentUser = sessionStorage.getItem("currentUser").username;
-//     let currentUserDetails = sessionStorage.getItem("currentUserDetails", JSON.stringify(user));
-//     document.getElementById("name").innerHTML = "<p>" + currentUser + " </p>";
 
-// }
 
 
 function previewImage() {
