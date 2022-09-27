@@ -28,13 +28,13 @@
 
 
  function login(e) {
-     let email = document.getElementById('email').value,
-         pwd = document.getElementById('pwd').value;
+     let email = document.getElementById('lemail').value,
+         pwd = document.getElementById('pswd').value;
      let formData = JSON.parse(localStorage.getItem('formData')) || [];
-     let exist = formData.length &&
+     let exist = //formData.length &&
          JSON.parse(localStorage.getItem('formData')).some(data =>
-             data.email.toLowerCase() == email.toLowerCase() &&
-             data.pwd.toLowerCase() == pwd.toLowerCase());
+             data.email == email.toLowerCase() &&
+             data.pwd == pwd.toLowerCase());
      if (!exist) {
          alert("Incorrect login credentials");
      } else {
@@ -43,16 +43,3 @@
      }
      e.preventDefault();
  }
- /*function login(e) {
-     let log_email = document.getElementById('email').value,
-         log_pwd = document.getElementById('pwd').value;
-     let formData = JSON.parse(localStorage.getItem('formData')) || [];
-     let exist = formData.length &&
-         JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
-     if (!exist) {
-         alert("Incorrect login credentials");
-     } else {
-         location.href = "friendly.html";
-     }
-     e.preventDefault();
- } */
